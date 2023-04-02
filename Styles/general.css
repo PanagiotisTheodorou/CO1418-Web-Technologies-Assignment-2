@@ -1,0 +1,260 @@
+/* THIS SECTION OF CSS IS USED IN ALL PAGES TO DISPLAY THE HEADER AND THE FOOTER */
+body {
+    font-family: sans-serif;
+}
+
+/* THIS SECTION IS USED FOR THE HEADER */
+
+header {
+    width: 100%;
+    background-color: #BE1622;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Img404{
+    width: 40%;
+    height: 40%;
+    margin: auto 30%;
+}
+
+/* This section of CSS is used to make the header and footer responsive and to show the hamburgher menu */
+
+/* media query here is used to configure the CSS for when the width of the page is smaller than 480px(phone view) */
+
+@media only screen and (max-width: 480px) {
+    #right-header{
+        display: none;
+    }
+    #icon{
+        display: inline;
+    }
+    footer {
+        font-size: 3vw;
+    }
+}
+
+/* media query here is used to configure the CSS for when the width of the page is greater than 480px(desktop view) */
+
+@media only screen and (min-width: 480px) {
+    #right-header{
+        display: grid;
+    }
+    #icon{
+        display: none;
+    }
+    #topnav {
+        display: none;
+    }
+    footer {
+        font-size: 2vw;
+    }
+}
+
+/* The remaining CSS is used for the header elements */ 
+
+/* left header */
+
+#left-header {
+    display: flex;
+}
+
+#left-header h2 {
+    font-size: 2.5vw;
+    margin-top: 5vw;
+}
+
+/* right header */
+
+#right-header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 1vw;
+    float: right;
+    grid-column-gap: 20px;
+    margin-top: 50px;
+    font-size: 2vw;
+}
+
+#right-header a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* This section of CSS is used to change attributes when hover/active are sued */
+
+#right-header a:hover {
+    background-color: #C7CBDA;
+    color: #007FB0;
+}
+
+#right-header a:active {
+    background-color: #BE1622;
+    color: #C7CBDA;
+}
+
+/* CSS here is responsible for the logo and the hamburgher menu */
+
+#logo {
+    width: 40%;
+}
+
+#topnav {
+    overflow: hidden;
+    background-color: #577A9B;
+    position: relative;
+}
+
+#myLinks {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 5px;
+}
+
+#topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 4vw;
+    display: block;
+}
+
+#icon {
+    background: #007FB0;
+    position: absolute;
+    padding: 10px;
+    right: 20px;
+    top: 25px;
+}
+
+/* THIS SECTION OF CSS IS USED FOR THE FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+    background-color: #34516C;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    width: 90%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007FB0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  #signupBtn, #signinBtn{
+    background: linear-gradient(#BE1622,#34516C);
+    color: wheat;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+
+}
+
+
+#signup,#signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 40px;
+    color: white;
+
+}
+
+#signup{
+    background: linear-gradient(45deg, transparent,#34516C, transparent);
+}
+
+#signin{
+    background: linear-gradient(45deg, transparent,#BE1622, transparent);
+}
+
+
+#signup input, #signin input{
+    border: 2px solid black;
+    background-color: beige;
+    border-radius: 15px;
+    max-width: 350px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+
+#signup button, #signin button{
+
+    margin-top: 20px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: aliceblue;
+
+}
+
+
+.logoutBtn{
+    
+    max-width: 250px;
+    width: 100%;
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 30px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+
+}
+
+.logoutBtn:hover{
+background: linear-gradient(45deg, darkred,transparent,darkred);
+    color: black;
+}

@@ -1,0 +1,19 @@
+.offer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: auto;
+  }
+
+.offer-item {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#offer-title {
+    color: #F2BE1A;
+}
+
+#offer-desc {
+    color: black;
+}

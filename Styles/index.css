@@ -1,0 +1,37 @@
+/* THIS SECTION OF CSS IS USED FOR THE INDEX PAGE */
+
+/* media query here is used to configure the CSS for when the width of the page is smaller than 480px(phone view) */
+
+@media only screen and (max-width: 480px) {
+    main {
+        width: 80%;
+        margin: 20px 10%;
+    }
+}
+
+/* media query here is used to configure the CSS for when the width of the page is greater than 480px(desktop view) */
+
+@media only screen and (min-width: 480px) {
+    main {
+        width: 60%;
+        margin: 30px 22%;
+    }
+}
+
+/* The remaining CSS is used for the main body for more aesthetics */
+
+main h1 {
+    color: #007FB0;
+}
+
+main h2{
+    color: #F2BE1A;
+}
+
+#video {
+    width: 100%;
+}
+
+#frame {
+    width: 100%;
+}

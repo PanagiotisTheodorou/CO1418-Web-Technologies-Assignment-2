@@ -1,0 +1,84 @@
+/* THIS SECTION OF CSS IS USED FOR THE ITEM PAGE */
+
+/* All of CSS in this page is used to make the item more be displayed better */
+#itemSection {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.item {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item button {
+    margin-left: 45%;
+    /* margin-bottom: 2%;
+    padding: 0 10px; */
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    padding: 10px;
+    background-color: #C7CBDA;
+    font-size: 2vw;
+}
+
+.description h3 {
+    color: #F2BE1A;
+}
+
+
+.review{
+    border: 2px solid black;
+    margin-top: 30px;
+    background-color: grey;
+    padding: 35px;
+}
+
+.review h2{
+    color: white;
+    text-align: center;
+}
+
+
+/* this is for the review submition form */
+
+#reviewForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(45deg, transparent,lightblue, transparent);
+    padding: 40px;
+}
+
+
+#reviewForm input{
+    border: 2px solid black;
+    background-color: beige;
+    border-radius: 15px;
+    max-width: 350px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#reviewForm button{
+
+    margin-top: 20px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: aliceblue;
+
+}
